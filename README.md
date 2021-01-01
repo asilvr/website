@@ -25,3 +25,8 @@ If all dependencies were correctly installed, the project can be built and run w
 ## Run
 To run the app, use `yarn start`.
 
+## TODO List
+The following are some TODO items:
+- Add tests for components
+- Incorporate a [router](https://reactrouter.com/) for multiple views
+- Profit?
