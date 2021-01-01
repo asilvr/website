@@ -11,7 +11,7 @@ function TextTitle(props) {
             size = "font-bold text-2xl"
             break
         case "caption":
-            size = "font-light text-xs"
+            size = "font-medium text-xs tracking-wide"
             break
         case "signature":
             size = "font-light text-xs italic"

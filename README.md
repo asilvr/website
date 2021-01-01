@@ -15,7 +15,7 @@ This project's setup depends on:
 - Intellisense from [Tailwind CSS integration](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - Formatting of HTML/JavaScript in VSCode
 
-I also following these guides:
+I also followed these guides:
 - [Create-React-App and Tailwind setup](https://tailwindcss.com/docs/guides/create-react-app)
 - [AWS Amplify for auto-deploy](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
 
