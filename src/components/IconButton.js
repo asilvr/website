@@ -38,7 +38,7 @@ function IconButton(props) {
             break
     }
     return (
-        <a href={href}>
+        <a href={href} target="_blank">
             <div class="inline-grid hover:opacity-80">
                 <div className={`font-light text-md ${!props.toggled ? "bg-forest-biome text-gray-100" : "bg-pink-a-boo text-gray-900"} rounded-full w-12 h-12 p-3 shadow-md inline-grid`}>
 

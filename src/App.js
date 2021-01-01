@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
 import TopPill from './components/TopPill';
 import BottomPill from './components/BottomPill';
 import Avatar from './components/Avatar';
 import IconButton from './components/IconButton';
 import Toggle from './components/Toggle';
 import TextTitle from './components/TextTitle';
+
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 // App is the main web application.
 function App() {
