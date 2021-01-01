@@ -1,14 +1,32 @@
-# Personal/Professional Website
-This repository contains assets for my personal/professional website.
+# Portfolio Website
 
-## Introduction
-In the past, my website has always been slightly out-of-date from my current activities. As such, I decided to make this site focus on dynamic links to up-to-date content. Consider it more of a landing page steering people to my digital platforms instead of a full website.
+## Purpose
+This project is my portfolio website.
 
-## Includes
-I opted to use an existing template for this site, and make adjustments as needed. The template comes from [HTML5 UP](https://html5up.net/identity) and is used under their free-use license. Images included are either my own or used with licenses.
+## Stack
+This project is based on this software stack:
+- [**React**](https://reactjs.org/) for the HTML/JavaScript framework
+- [**Tailwind**](https://tailwindcss.com/) for the CSS framework
+- [**AWS Amplify**](https://aws.amazon.com/amplify/) for auto-deploy to the Internet
 
-## Deployment
-Since the site is statically served, I opted to host it on [Amazon AWS](https://aws.amazon.com) using S3. This keeps the update pipeline relatively simple.
+## Setup
+This project's setup depends on:
+- Dependency management from `npm`/`npx`
+- Intellisense from [Tailwind CSS integration](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- Formatting of HTML/JavaScript in VSCode
 
-## Futures
-In the future, I may opt to extend the functionality of the site, possibly adding a self-hosted blog using tooling such as [Hugo](https://gohugo.io).
+I also followed these guides:
+- [Create-React-App and Tailwind setup](https://tailwindcss.com/docs/guides/create-react-app)
+- [AWS Amplify for auto-deploy](https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/)
+
+## Build
+If all dependencies were correctly installed, the project can be built and run with `yarn build`.
+
+## Run
+To run the app, use `yarn start`.
+
+## TODO List
+The following are some TODO items:
+- Add tests for components
+- Incorporate a [router](https://reactrouter.com/) for multiple views
+- Profit?
