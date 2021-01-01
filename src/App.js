@@ -25,12 +25,7 @@ function App() {
     return [value, setValue];
   }
 
-  // This generates a random boolean for the default state of the toggle.
-  // This makes it so that new visitors don't always get the same mode, 
-  // but the sticky state keeps them on the same mode once they've visited
-  // or changed it.
-  var randomDefault = (Math.random() < 0.5)
-  const [toggled, setToggled] = useStickyState(randomDefault, "toggled");
+  const [toggled, setToggled] = useStickyState(false, "toggled");
 
   return (
     <div class="bg-gray-800 min-h-full h-screen">
@@ -60,7 +55,7 @@ function App() {
             </div>
             <div class="pt-6">
               <TextTitle toggled={toggled} size="signature">
-                (Designed by Alex using <a class="underline" href="https://reactjs.org/">React</a> and <a class="underline" href="https://tailwindcss.com">TailwindCSS</a>)
+                (Designed by Alex using <a class="underline hover:opacity-80" href="https://reactjs.org/">React</a> and <a class="underline hover:opacity-80" href="https://tailwindcss.com">TailwindCSS</a>)
               </TextTitle>
             </div>
           </BottomPill>
