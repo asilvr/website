@@ -55,7 +55,7 @@ function App() {
             </div>
             <div class="pt-6">
               <TextTitle toggled={toggled} size="signature">
-                (Designed by Alex using <a class="underline hover:opacity-80" href="https://reactjs.org/">React</a> and <a class="underline hover:opacity-80" href="https://tailwindcss.com">TailwindCSS</a>)
+                (Made with <a class="underline hover:opacity-80" href="https://reactjs.org/">React</a> &amp; <a class="underline hover:opacity-80" href="https://tailwindcss.com">TailwindCSS</a>. Source on <a class="underline hover:opacity-80" href="https://github.com/asilvr/website">GitHub</a>.)
               </TextTitle>
             </div>
           </BottomPill>
