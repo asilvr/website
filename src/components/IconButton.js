@@ -40,7 +40,7 @@ function IconButton(props) {
     return (
         <a href={href} target="_blank">
             <div class="inline-grid hover:opacity-80">
-                <div className={`font-light text-md ${!props.toggled ? "bg-forest-biome text-gray-100" : "bg-pink-a-boo text-gray-900"} rounded-full w-12 h-12 p-3 shadow-md inline-grid`}>
+                <div className={`font-light text-md ${!props.toggled ? "bg-primary-fg" : "bg-secondary-fg"} text-gray-100 rounded-full w-12 h-12 p-3 shadow-md inline-grid`}>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         {svg}
