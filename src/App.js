@@ -28,7 +28,7 @@ function App() {
   const [toggled, setToggled] = useStickyState(false, "toggled");
 
   return (
-    <div class="bg-gray-800 min-h-full h-screen">
+    <div class="bg-gray-900 min-h-full h-screen">
       <div class="flex pb-2 sm:pt-16 justify-center">
         <div class="w-96 p-4">
           <TopPill toggled={toggled}>

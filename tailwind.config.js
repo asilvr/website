@@ -11,7 +11,7 @@ module.exports = {
         // green
         "primary-bg": "#93c3fd",
         // Medium shade of gray
-        "secondary-fg": "#374151",
+        "secondary-fg": "#4b5563",
         // Bold shade of gray
         "secondary-bg": "#1F2937",
       }
