@@ -25,17 +25,20 @@ function App() {
     return [value, setValue];
   }
 
-  const [toggled, setToggled] = useStickyState(false, "toggled");
+  // Dark mode detection and auto-toggle logic
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)')
+  const [toggled, setToggled] = useStickyState(isDark.matches, "toggled");
+  isDark.addListener(() => { setToggled(isDark.matches) })
 
   return (
-    <div class="bg-gray-900 min-h-full h-screen">
-      <div class="flex pb-2 sm:pt-16 justify-center">
-        <div class="w-96 p-4">
+    <div className={`${!toggled ? "bg-gray-300" : "bg-gray-900"} transition ease-in-out duration-500 min-h-full h-screen`}>
+      <div className="flex pb-2 sm:pt-16 justify-center">
+        <div className="w-96 p-4">
           <TopPill toggled={toggled}>
-            <div class="inline-block">
+            <div className="inline-block">
               <Avatar toggled={toggled} />
             </div>
-            <div class="pt-4">
+            <div className="pt-4">
               <Toggle toggled={toggled} setToggled={setToggled} />
             </div>
           </TopPill>
@@ -46,16 +49,16 @@ function App() {
             <TextTitle toggled={toggled} size="subtitle">
               Software Engineer
             </TextTitle>
-            <div class="pt-4 space-x-4">
+            <div className="pt-4 space-x-4">
               <IconButton icon="resume" toggled={toggled} />
               <IconButton icon="linkedin" toggled={toggled} />
               <IconButton icon="github" toggled={toggled} />
               <IconButton icon="twitter" toggled={toggled} />
               <IconButton icon="medium" toggled={toggled} />
             </div>
-            <div class="pt-6">
+            <div className="pt-6">
               <TextTitle toggled={toggled} size="signature">
-                (Made with <a class="underline hover:opacity-80" href="https://reactjs.org/">React</a> &amp; <a class="underline hover:opacity-80" href="https://tailwindcss.com">TailwindCSS</a>. Source on <a class="underline hover:opacity-80" href="https://github.com/asilvr/website">GitHub</a>.)
+                (Made with <a className="underline hover:opacity-80" href="https://reactjs.org/">React</a> &amp; <a className="underline hover:opacity-80" href="https://tailwindcss.com">TailwindCSS</a>. Source on <a className="underline hover:opacity-80" href="https://github.com/asilvr/website">GitHub</a>.)
               </TextTitle>
             </div>
           </BottomPill>
